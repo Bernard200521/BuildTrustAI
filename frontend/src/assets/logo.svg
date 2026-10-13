@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50" fill="none">
+  <defs>
+    <linearGradient id="shieldGradH" x1="5" y1="5" x2="45" y2="45" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="45%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+    <linearGradient id="coreGradH" x1="15" y1="15" x2="35" y2="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="60%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Emblem (Scaled & Translated to x=4, y=4, size 42x42) -->
+  <g transform="translate(4, 3) scale(0.44)">
+    <!-- Outer Shield -->
+    <path d="M50 8 L84 20 C84 56 68 80 50 92 C32 80 16 56 16 20 Z" 
+          fill="#0b1329" 
+          stroke="url(#shieldGradH)" 
+          stroke-width="4.5" 
+          stroke-linejoin="round"/>
+
+    <!-- Inner Dashed Line -->
+    <path d="M50 16 L76 25 C76 52 63 72 50 82 C37 72 24 52 24 25 Z" 
+          fill="#081020" 
+          stroke="#134e4a" 
+          stroke-width="2" 
+          stroke-dasharray="3 3"/>
+
+    <!-- Nodes & Links -->
+    <line x1="50" y1="27" x2="34" y2="46" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"/>
+    <line x1="50" y1="27" x2="66" y2="46" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"/>
+    <line x1="34" y1="46" x2="50" y2="68" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+    <line x1="66" y1="46" x2="50" y2="68" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
+
+    <circle cx="50" cy="27" r="5" fill="#06b6d4" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="34" cy="46" r="4.5" fill="#0d9488" stroke="#ffffff" stroke-width="1.8"/>
+    <circle cx="66" cy="46" r="4.5" fill="#0d9488" stroke="#ffffff" stroke-width="1.8"/>
+    <circle cx="50" cy="68" r="4.5" fill="#10b981" stroke="#ffffff" stroke-width="1.8"/>
+
+    <!-- Central Core Hexagon -->
+    <polygon points="50,38 60,45 60,57 50,64 40,57 40,45" 
+             fill="url(#coreGradH)" 
+             stroke="#e0f2fe" 
+             stroke-width="2.2"/>
+    <!-- Checkmark -->
+    <path d="M46 51 L49 54 L55 47" 
+          stroke="#ffffff" 
+          stroke-width="2.8" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+
+  <!-- Typography: Wordmark BuildTrust AI -->
+  <text x="56" y="32" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+    Build<tspan fill="#38bdf8">Trust</tspan>
+  </text>
+
+  <!-- AI Accent Badge -->
+  <g transform="translate(196, 15)">
+    <rect width="36" height="22" rx="6" fill="#042f2e" stroke="url(#aiGrad)" stroke-width="1.2"/>
+    <text x="18" y="15" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="800" fill="#34d399" text-anchor="middle" letter-spacing="1">
+      AI
+    </text>
+  </g>
+</svg>

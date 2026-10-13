@@ -1,0 +1,9 @@
+{
+  "builder_id": "https://untrusted-unauthorized-builder.org/agent",
+  "build_type": "https://slsa.dev/provenance/v1",
+  "source_revision": "deadbeef00000000",
+  "artifact_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "slsa_level": "SLSA_BUILD_LEVEL_0",
+  "cosign_verified": "FAILED",
+  "cosign_signer_identity": null
+}

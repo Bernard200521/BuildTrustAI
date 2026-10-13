@@ -1,0 +1,19 @@
+{
+  "project_id": "demo-payment-service",
+  "release_id": "rel-001",
+  "version": "1.0.0",
+  "source_commit": "a1b2c3d4e5f67890",
+  "artifact": {
+    "filename": "payment-service-1.0.0.zip",
+    "s3_key": "artifacts/demo-payment-service/1.0.0/payment-service-1.0.0.zip",
+    "expected_sha256": "ae4cb295b8a6d34680bede3714ee8ea7f69d65e148c7f7adedd56ac866a4abad"
+  },
+  "evidence_requirements": {
+    "sbom_required": true,
+    "provenance_required": true,
+    "tests_required": true,
+    "dependency_scan_required": true
+  },
+  "policy_version": "1.0",
+  "environment": "staging"
+}

@@ -1,0 +1,19 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 1,
+  "components": [
+    {
+      "name": "log4j-core",
+      "version": "2.14.1",
+      "type": "library",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1"
+    },
+    {
+      "name": "urllib3",
+      "version": "1.26.4",
+      "type": "library",
+      "purl": "pkg:pypi/urllib3@1.26.4"
+    }
+  ]
+}

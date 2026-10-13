@@ -1,0 +1,21 @@
+{
+  "model_type": "IsolationForest",
+  "n_estimators": 150,
+  "features": [
+    "norm_vuln_crit",
+    "norm_vuln_high",
+    "norm_vuln_med",
+    "max_vuln_severity_code",
+    "integrity_status_code",
+    "provenance_status_code",
+    "evidence_completeness_pct",
+    "test_pass_rate_pct",
+    "test_mandatory_passed",
+    "delta_vuln_count",
+    "evidence_changed_count"
+  ],
+  "n_training_samples": 1200,
+  "contamination": 0.1,
+  "dataset_type": "reproducible_synthetic_demonstration_benchmark",
+  "caveat": "Anomaly scores are release prioritization signals and do NOT override deterministic security policies."
+}

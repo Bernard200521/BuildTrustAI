@@ -1,0 +1,10 @@
+{
+  "builder_id": "https://github.com/BuildTrustAI/actions/runner@v3",
+  "build_type": "https://slsa.dev/provenance/v1",
+  "source_revision": "a1b2c3d4e5f67890",
+  "artifact_digest": "ae4cb295b8a6d34680bede3714ee8ea7f69d65e148c7f7adedd56ac866a4abad",
+  "slsa_level": "SLSA_BUILD_LEVEL_2",
+  "invocation_entry_point": ".github/workflows/release.yml",
+  "cosign_verified": "VERIFIED",
+  "cosign_signer_identity": "buildtrust-signer@iam.gserviceaccount.com"
+}

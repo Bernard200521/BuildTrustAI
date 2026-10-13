@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: buildtrust-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=development
+      - STORAGE_BACKEND=local
+      - LOCAL_STORAGE_DIR=/app/data
+      - PORT=8000
+      - HOST=0.0.0.0
+      - JWT_SECRET_KEY=dev-secret-key-buildtrust-local-mode-only
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:3000
+    volumes:
+      - ./backend/data:/app/data
+      - ./sample_data:/app/sample_data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: buildtrust-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: unless-stopped

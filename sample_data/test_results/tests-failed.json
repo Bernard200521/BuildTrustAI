@@ -1,0 +1,23 @@
+{
+  "test_framework": "pytest",
+  "total_tests": 45,
+  "passed": 40,
+  "failed": 5,
+  "skipped": 0,
+  "mandatory_tests_passed": false,
+  "coverage_percentage": 78.0,
+  "suites": [
+    {
+      "name": "unit_tests",
+      "passed": true,
+      "duration_seconds": 3.1,
+      "mandatory": true
+    },
+    {
+      "name": "security_regression_suite",
+      "passed": false,
+      "duration_seconds": 5.4,
+      "mandatory": true
+    }
+  ]
+}
